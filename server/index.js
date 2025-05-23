@@ -29,7 +29,7 @@ mongoose
 // Middleware
 app.use(
   cors({
-    origin: "https://render-v-c73m.vercel.app", // hoặc origin: '*' (cho phép tất cả, chỉ nên dùng test)
+    origin: "*", // hoặc origin: '*' (cho phép tất cả, chỉ nên dùng test)
     credentials: true,
   })
 );
