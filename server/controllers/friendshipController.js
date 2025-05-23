@@ -1,4 +1,4 @@
-const Friendship = require("../Models/Friendship");
+const Friendship = require("../Models/friendship");
 const User = require("../Models/userModel");
 
 const sendFriendRequest = async (req, res) => {
