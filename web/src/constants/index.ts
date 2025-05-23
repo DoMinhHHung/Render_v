@@ -17,8 +17,9 @@ export const getStoredIP = () => {
 };
 
 // API endpoints
-export const API_URL = `http://${getStoredIP()}:3005`;
-export const SOCKET_URL = API_URL; // Using same URL for socket connection
+export const API_URL =
+  process.env.REACT_APP_API_URL || "https://render-v-j8dy.onrender.com";
+export const SOCKET_URL = API_URL;
 export const API_ENDPOINT = `${API_URL}/api`;
 
 // Hàm kiểm tra kết nối API và thay đổi IP nếu cần

@@ -29,11 +29,8 @@ mongoose
 // Middleware
 app.use(
   cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    origin: "https://render-v-c73m.vercel.app", // hoặc origin: '*' (cho phép tất cả, chỉ nên dùng test)
     credentials: true,
-    maxAge: 86400,
   })
 );
 // Tăng giới hạn kích thước request body cho uploads
